@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <nav>
+        <div class="menubar">
+            <img class="img" src="img/farming.jpg" alt="Error">
+            <ul>
+                <li><a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a></li>
+                <li><a href="#">Product <i class="fa fa-angle-down"></i></a>
+                    <div class="submenu1">
+                        <ul>
+                            <li><a href="vegetable.html">Vegetables</a></li>
+                            <li><a href="fruits.html">Fruits</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="farmer_reg.html"><i class="fa fa fa-handshake-o"></i> Farmer</a></li>
+                <li><a href="#"><i class="fa fa-phone"></i> Contact us</a></li>
+                <button class="sign">Cart <i class="fa fa-cart-arrow-down"></i> <sup><span></span></sup></button>
+            </ul>
+        </div>
+    </nav>
+    <div class="product-container">
+        <div class="products">
+
+        </div>
+        <button type="button" class="btn btn-block btn-outline-success" onclick="window.location.href='payment.html';">Proceed to Pay</button>
+        <center><button type="button" class="clear-btn" onclick="clearStorage()">Clear Cart</button></center>
+
+    </div>
+        
+
+    <script src="cart.js"></script>
+    <script src="cart1.js"></script>
+    <script>
+        
+        function clearStorage(){
+            localStorage.clear();
+        }
+    </script>
+</body>
+</html>

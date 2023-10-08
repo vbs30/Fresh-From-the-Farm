@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer registration form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="farmer_reg.css">
+</head>
+<body>
+    <div class="container bg-success p-2 text-dark bg-opacity-10">
+        <form action="/farmer-reg" method="POST">
+            <h1 class="main_heading">Farmer registration form</h1>
+            <br>
+            <h4>Personal information</h4>
+            <br>    
+            <p>Name: *</p><input type="text" autocomplete="off" name="name" id="name" required onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"  placeholder="Enter your name"><br>
+            <p>Contact Number: *</p><input type="text" autocomplete="off" name="phone" id="" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="9756342561"><br>
+            <p>Email: *</p><input type="email" name="email" id="email" required placeholder="abc123@gmail.com"><br>
+            <p>Address</p><br>
+            <p>Block: </p><input type="text" autocomplete="off" name="block" id="" placeholder="A/504"><br>
+            <p>Street line: </p><input type="text" autocomplete="off" name="line" id="" onkeypress="return (event.charCode > 64 && 
+                event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" placeholder="M.G. Road"><br>
+            <p>Village/town: </p><input type="text" autocomplete="off" name="town" id="" onkeypress="return (event.charCode > 64 && 
+                event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" placeholder="Nashik"><br>
+            <p>State: </p><input type="text" autocomplete="off" name="state" id="" placeholder="Maharashtra" onkeypress="return (event.charCode > 64 && 
+                event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"><br>
+            <p>pincode: * </p><input type="text" autocomplete="off" name="pincode" id="pincode" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="123456"><br>
+            <br>
+            <h4>Bank details</h4><br>
+            <p>Name of Bank: * </p><input type="text" autocomplete="off" name="bank" id="" onkeypress="return (event.charCode > 64 && 
+                event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" placeholder="State bank of india" required><br>
+            <p>Branch: * </p><input type="text" autocomplete="off" name="branch" id="" onkeypress="return (event.charCode > 64 && 
+                event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" placeholder="Tisgaon" required><br>
+            <p>Account Number: * </p><input type="text" autocomplete="off" name="acc" id="" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="2003567543" required></p><br>
+            <p>IFSC Code: * </p><input type="text" autocomplete="off" name="ifsc" placeholder="SBI25364" required><br>
+            <br>
+            <center><button type="submit" value="submit" class="btn btn-outline-success btn-lg btn-block">Submit</button></center><br>
+        </form>
+    </div>
+</body>
+</html>

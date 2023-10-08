@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+h1{
+    color: rgb(0, 59, 0);
+    text-align: center;
+    padding: 20px;
+   
+}
+
+.container{
+    background-color:rgb(192, 224, 184);
+    padding: 5px 20px 15px 20px;
+    border: 1.5px solid rgb(7, 156, 94);
+    border-radius: 4px;
+    /* margin: 280px 20px 289px 20px; */
+}
+
+form{
+    width: 100%;
+}
+
+select{
+    width: 250px;
+    padding: 15px;
+    border: 2px solid rgb(65, 188, 123);
+    border-radius: 4px;
+    margin: 0;
+}
+
+input[type="text"]
+{
+    width: 250px;
+    padding: 15px;
+    border: 2px solid rgb(65, 188, 123);
+    border-radius: 4px;
+   margin-bottom: 20px;
+}
+
+p{
+    width: 220px;
+    display: inline-block;  
+}

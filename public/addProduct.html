@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="addProduct.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/add-product" method="post">
+        <h1>Add Product</h1>
+        <p>Username</p> <input type="text" autocomplete="off" name="username" id="">
+        <br>
+        <p> Product Name</p>
+        <select class="mb-4" name="name" id="">
+            <option value="Products" name="products">Products</option>
+            <option value=""></option>
+            <option value="Potato" name="Potato">Potato</option>
+            <option value="Tomato" name="Tomato">Tomato</option>
+            <option value="Onion" name="Onion">Onion</option>
+            <option value="Cabbage" name="Cabbage">Cabbage</option>
+            <option value="Brinjal" name="Brinjal">Brinjal</option>
+            <option value="Carrot" name="Carrot">Carrot</option>
+            <option value="Cauliflower" name="Cauliflower">Cauliflower</option>
+            <option value="Green peas" name="Green peas">Green peas</option>
+            <option value="Green capsicum" name="Green capsicum">Green capsicum</option>
+            <option value="Curry leaves" name="Curry leaves">Curry leaves</option>
+            <option value="Green chili" name="Green chili">Green chili</option>
+            <option value="French beans" name="French beans">French beans</option>
+            <option value="Bottlegourd" name="Bottlegourd">Bottlegourd</option>
+            <option value="Bittergourd" name="Bittergourd">Bittergourd</option>
+            <option value="Garlic" name="Garlic">Garlic</option>
+            <option value="Lemon" name="Lemon">Lemon</option>
+            <option value="Ginger" name="Ginger">Ginger</option>
+            <option value="Mint leaves" name="Mint leaves">Mint leaves</option>
+            <option value="Beetroot" name="Beetroot">Beetroot</option>
+            <option value="Broad beans" name="Broad beans">Broad beans</option>
+            <option value="Matki" name="Matki">Matki</option>
+            <option value="Green moong" name="Green moong">Green moong</option>
+            <option value="Mixed sprouts" name="Mixed sprouts">Mixed sprouts</option>
+            <option value="Fenugreek" name="Fenugreek">Fenugreek</option>
+            <option value="Corriander leaves" name="Corriander leaves">Corriander leaves</option>
+            <option value=""></option>
+            <option value="Apple" name="Apple">Apple</option>
+            <option value="Banana" name="Banana">Banana</option>
+            <option value="Mango" name="Mango">Mango</option>
+            <option value="Orange" name="Orange">Orange</option>
+            <option value="Pineapple" name="Pineapple">Pineapple</option>
+            <option value="Watermelon" name="Watermelon">Watermelon</option>
+            <option value="Strawberry" name="Strawberry">Strawberry</option>
+            <option value="Pear" name="Pear">Pear</option>
+            <option value="Green grapes" name="Green grapes">Green grapes</option>
+            <option value="Papaya" name="Papaya">Papaya</option>
+            <option value="Coconut" name="Coconut">Coconut</option>
+            <option value="Jackfruit" name="Jackfruit">Jackfruit</option>
+            <option value="Black grapes" name="Black grapes">Black grapes</option>
+            <option value="Pomegranate" name="Pomogranate">Pomegranate</option>
+            <option value="Cherry" name="Cherry">Cherry</option>
+            <option value="Kiwi" name="Kiwi">Kiwi</option>
+            <option value="Custard apple" name="Custard apple">Custard apple</option>
+            <option value="Melon" name="Melon">Melon</option>
+            <option value="Jamun" name="Jamun">Jamun</option>
+            <option value="Fig" name="Fig">Fig</option>
+        </select>
+    <br>
+   <p> Quantity</p> 
+        <select class="mb-4" name="quantity" id="">
+            <option value="5 kg">5 kg</option>
+            <option value="10 kg">10 kg</option>
+            <option value="15 kg">15 kg</option>
+            <option value="20 kg">20 kg</option>
+            <option value="25 kg">25 kg</option>
+            <option value="30 kg">30 kg</option>
+            <option value="40 kg">40 kg</option>
+            <option value="50 kg">50 kg</option>
+        </select>
+    <br>
+    <p>Tentative price/kg</p> <input type="text" autocomplete="off" name="price" id="" placeholder="Rs. 30" required>
+    <br>
+    <div class="text-center col-7">
+    <button type="submit" onclick="alertpoint()" class="btn btn-outline-success btn-lg">Submit</button>
+    </div>
+</form>
+</div>
+
+<script>
+    function alertpoint(){
+        alert("Successfully uploaded");
+        window.location = "FarmerMain.html"
+    }
+</script>
+</body>
+</html>

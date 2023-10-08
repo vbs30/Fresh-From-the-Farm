@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img {
+    align-items: center;
+    width: 90px;
+    height: 80px;
+    float: left;
+    background-color: rgb(67, 182, 67);
+}
+
+.menubar {
+    background: rgb(67, 182, 67);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+.menubar ul {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.menubar ul li {
+    width: 200px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menubar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+}
+
+.menubar ul li a:hover {
+    padding: 10px;
+    background-color: white;
+    color: rgb(67, 182, 67);
+}
+
+.submenu1 {
+    display: none;
+}
+
+.menubar ul li:hover .submenu1 {
+    display: block;
+    position: absolute;
+    background-color: rgb(67, 182, 67);
+    color: white;
+
+}
+
+.menubar ul li:hover .submenu1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menubar ul li:hover .submenu1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dashed white;
+    background: transparent;
+    text-align: left;
+}
+
+.sign {
+    float: right;
+}
+
+button {
+    background: none;
+    font-size: 24px;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    padding: 5px 15px;
+    margin: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(67, 182, 67);
+    /* box-shadow: 0 0 5px rgb(111, 196, 20), 0 0 25px rgb(129, 196, 20), 0 0 50px rgb(129, 196, 20), 0 0 200px rgb(117, 196, 20) ; */
+}
+.clear-btn{
+    background: none;
+    font-size: 24px;
+    height: 50px;
+    color: white;
+    background-color: rgb(28, 207, 12);
+    font-weight: bold;
+    padding: 5px 15px;
+    margin: 20px;
+    /* border: 2px solid rgb(28, 207, 12); */
+    border-radius: 20px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.clear-btn:hover{
+    background-color: rgb(28, 207, 12);
+    color: white;
+    box-shadow: 0 0 5px rgb(28, 207, 12), 0 0 10px rgb(28, 207, 12), 0 0 25px rgb(28, 207, 12), 0 0 50px rgb(28, 207, 12);
+}
+.clear-btn:active{
+    transform: scale(0.97);
+
+}
+
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.productHeader{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    /* border-bottom: 4px solid lightgreen; */
+    margin: 0 auto;
+}
+
+.product-title{
+    width: 65%;
+    text-align: center;
+}
+.price{
+    width: 25%;
+}
+.total{
+    width: 23%;
+    /* display: flex; */
+    text-align: center;
+    /* align-items: center; */
+}
+.product{
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    /* border-bottom: 1px solid lightgreen; */
+}
+.quantity{
+    width: 13%;
+    /* display: flex; */
+    /* text-align: center; */
+    /* align-items: center; */
+    /* justify-content: space-around; */
+}
+.fa-remove:before, .fa-close:before, .fa-times:before {
+    content: "\f00d";
+    color: darkgreen;
+    cursor: pointer;
+    font-size: 17px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.fa-plus-square:before {
+    content: "\f0fe";
+    color: darkgreen;
+    cursor: pointer;
+    font-size: 17px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.fa-minus-square:before {
+    content: "\f146";
+    color: darkgreen;
+    cursor: pointer;
+    font-size: 17px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+img{
+    width: 80px;
+}
+.basketTotalContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+   padding: 10px 0;
+}
+
+.basketTotalTitle{
+    width: 55%;
+    text-align: center;
+}
+
+.basketTotal{
+    width: 20%;
+}
+
+th{
+    text-align: center;
+    font-size: 16px;
+}
+
+td .total{
+    text-align: right;
+}

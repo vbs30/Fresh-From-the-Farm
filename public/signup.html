@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form - MongoDB</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="main">
+            <form action="/sign_up" method="POST">
+                <h2>SignUp Form</h2>
+                <p>Name</p><input type="text" autocomplete="off" class="box" id="name" name="name" placeholder="Name" onkeypress="return (event.charCode > 64 && 
+                    event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required />
+                <br>
+                <p>Email</p><input type="email" autocomplete="off" class="box" id="email" name="email" placeholder="Email" required />
+                <br>
+                <p>Username</p><input type="text" autocomplete="off" class="box" id="username" name="username" placeholder="Username"
+                    required />
+                <br>
+                <p>Password</p><input type="password" class="box" id="password" name="password" placeholder="Password"
+                    required />
+                <br>
+                <br>
+                <div class="btn_format"">
+                <center><button class="button" type="submit" value="Submit" id="submit">Sign_up</button></center>
+                <br><br>
+                <!-- <a class="btn" href="login.html" role="button">Login</a> -->
+                <center>Already have an account, try <a href="login.html">Login</a></center>
+                <br>
+                <center><a href="index.html">HomePage --> </a></center>
+            </div>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 15px 30px;
+    font-size: 18px ;
+    padding: 10px;
+    /* display: inline-block; */
+}
+
+.container{
+    background-color:floralwhite;
+    padding: 5px 20px 15px 20px;
+    border: 1.5px solid rgb(82, 188, 233);
+    border-radius: 4px;
+    display: flex;
+    margin: 10px;
+}
+
+p{
+   display: inline-block;
+    width: 150px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"]{
+    /* padding: 5px; */
+    border: 2px solid rgb(82, 188, 233);
+    border-radius: 4px;
+    /* margin: 0px; */
+    text-align: center;
+    align-items: center;
+    margin-left: 200px;
+    padding-bottom: 10px ;
+}
+
+h1, h4{
+    text-align: center;
+    color:rgb(172, 3, 3);
+}
