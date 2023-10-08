@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <style>
+      *{
+        padding: 8px;
+        margin: 5px;
+      }
+      h1{
+        text-align: center;
+        /* margin-top: 50px; */
+        margin-bottom: 30px;
+      }
+      
+    </style>
+</head>
+
+<body>
+
+  <!-- <form action="/product" method="get">
+    <input type="text" name="productName">
+    <button type="submit">Submit</button>
+    </form> -->
+    <h1>Added Product</h1>
+   <% productList.forEach(item => {   %> 
+  <% }) %>
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th>Username</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%productList.forEach(item => {  %>
+        <tr>
+          <th><%= item.username %> </th>
+          <th><%= item.name %> </th>
+          <th><%= item.price %> </th>
+          <th><%= item.quantity %> </th>
+        </tr>
+    <%  })  %>
+    </tbody>
+  </table>
+
+    </div>
+</body>
+
+</html>   
